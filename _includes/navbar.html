@@ -1,0 +1,64 @@
+<head>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script>
+    var defaultMode = "{{ site.mode }}";
+  </script>
+  <script src="/assets/js/script.js"></script>
+</head>
+<header>
+  <div class="navbar-wrapper">
+    <div class="navbar" role="navigation">
+      <nav class="menu-left">
+        {%- assign lang = page.lang -%}
+        {%- if lang == "pl" -%}
+        <a href="/"><img src="/assets/img/logo_czarnobiałe_kontra_pl.svg" alt="Logo"></a>
+        {%- else -%}
+        <a href="/en/"><img src="/assets/img/logo_bw_contra_eng.svg" alt="Logo"></a>
+        {%- endif -%}
+      </nav>
+      <nav class="menu-middle">
+        {%- assign url = page.url -%}
+        {%- assign menus = site.data.menus -%}
+        {%- assign lang = page.lang -%}
+        {%- if menus %}
+        {%- for menu in menus -%}
+        {%- if lang == menu.lang -%}
+        {%- if url == menu.url -%}
+        <a class="menu-link active" href="{{ menu.url }}">{{ menu.title }}</a>
+        {%- else -%}
+        {%- if menu.external -%}
+        <a class="menu-link" href="{{ menu.url }}" target="_blank" rel="noopener">{{ menu.title }}</a>
+        {%- else -%}
+        <a class="menu-link" href="{{ menu.url }}">{{ menu.title }}</a>
+        {%- endif -%}
+        {%- endif -%}
+        {%- endif -%}
+        {%- endfor -%}
+        {%- else -%}
+        {%- endif -%}
+      </nav>
+      <nav class="menu-right">
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <a id="mode" title="theme">
+          <i class="fa-solid fa-circle-half-stroke">
+          </i>
+        </a>
+        <div class="dropdown">
+          <i class="fa-solid fa-language"></i>
+          <div class="lang-dropdown">
+            {% assign current_lang = page.lang | default: "pl" %}
+
+            {% if current_lang == "pl" %}
+            <a href="{{ page.url }}">Polski</a>
+            <a href="{{ site.baseurl }}/en{{ page.url }}">English</a>
+            {% else %}
+            <a href="{{ page.url | remove_first: '/en' }}">Polski</a>
+            <a href="{{ page.url }}">English</a>
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

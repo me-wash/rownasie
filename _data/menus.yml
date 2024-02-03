@@ -1,0 +1,44 @@
+# --- polish menu ---
+- title: Cześć
+  url: /
+  external: false
+  lang: pl
+- title: Wsparcie
+  url: /support
+  external: false
+  lang: pl
+- title: Kontakt
+  url: /contact
+  external: false
+  lang: pl
+- title: Dokumenty
+  url: /docs
+  external: false
+  lang: pl
+- title: Marsz
+  url: https://example.com
+  external: true
+  lang: pl
+
+# --- english menu ---
+
+- title: Hello
+  url: /en/
+  external: false
+  lang: en
+- title: Support
+  url: /en/support
+  external: false
+  lang: en
+- title: Contact
+  url: /en/contact
+  external: false
+  lang: en
+- title: Docs
+  url: /en/docs
+  external: false
+  lang: en
+- title: Pride
+  url: https://example.com
+  external: true
+  lang: en

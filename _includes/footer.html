@@ -1,0 +1,58 @@
+<div class="footer-wrapper">
+  <div class="footer-left">
+    <!-- Logo -->
+    {%- assign lang = page.lang -%}
+    {%- if lang == "pl" -%}
+    <img src="/assets/img/logo_czarnobiałe_kontra_pl.svg" alt="Logo">
+    {%- else -%}
+    <img src="/assets/img/logo_bw_contra_eng.svg" alt="Logo">
+    {%- endif -%}
+  </div>
+  <div class="footer-middle">
+    <!-- Social Media Icons -->
+    <nav class="social-icons">
+      {%- assign tags = site.data.social-media -%}
+      {%- if tags %}
+      {%- for tag in tags-%}
+      <a class="social-icons" href="{{ tag.url}}" title="tag.title"><i class="{{tag.icon}}"></i></a>
+      {%- endfor -%}
+      {%- endif -%}
+    </nav>
+  </div>
+
+  <div class="footer-right">
+    <!-- Vertical Menu -->
+    <nav class="vertical-menu">
+      {%- assign url = page.url -%}
+      {%- assign menus = site.data.menus -%}
+      {%- assign lang = page.lang -%}
+      {%- if menus %}
+      {%- for menu in menus -%}
+      {%- if lang == menu.lang -%}
+      {%- if url == menu.url -%}
+      <a class="menu-link active" href="{{ menu.url }}">{{ menu.title }}</a>
+      {%- else -%}
+      {%- if menu.external -%}
+      <a class="menu-link" href="{{ menu.url }}" target="_blank" rel="noopener">{{ menu.title }}</a>
+      {%- else -%}
+      <a class="menu-link" href="{{ menu.url }}">{{ menu.title }}</a>
+      {%- endif -%}
+      {%- endif -%}
+      {%- endif -%}
+      {%- endfor -%}
+      {%- else -%}
+      {%- endif -%}
+    </nav>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear"></span> {{site.organisation.name}} </p>
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Display the current year in the span with id "currentYear"
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+  </div>
+</div>

@@ -1,0 +1,144 @@
+// Navbar
+.navbar-wrapper {
+  background: $purple;
+  border-bottom: 1px solid $dark-light;
+}
+
+.navbar {
+  height: auto;
+  max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
+  max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.menu-left img {
+  float: left;
+  max-width: 130px;
+  max-height: auto;
+}
+
+// Navigation
+.menu-middle {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  justify-content: center;
+
+  .mode-link {
+    position: relative;
+    clear: both;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.7;
+    z-index: 1;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    &:active {
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+    }
+  }
+
+  .menu-link {
+    color: $light;
+    line-height: $base-line-height + 0.4;
+    text-decoration: none;
+    padding: 5px 8px;
+    opacity: 0.7;
+    letter-spacing: 0.3px;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.2s;
+    }
+    &:before{
+      content: ".";
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+  }
+
+  .menu-link.active {
+    color: $white;
+    opacity: 1;
+    font-weight: 600;
+  }
+}
+
+.menu-right {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  justify-content: center;
+
+  a#mode  {
+    position: relative;
+    padding: 15px;
+    justify-content: center;
+    clear: both;
+    opacity: 0.7;
+    color: $light;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    color: $light;
+    opacity: 0.7;
+    
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  .dropdown i {
+    font-size: 20px;
+  }
+  .lang-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    border-radius: 8px
+  }
+
+  .lang-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+.lang-dropdown a:hover {background-color: $dark-white;
+  border-radius: 8px}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .lang-dropdown {display: block; border-radius: 8px}
+
+}

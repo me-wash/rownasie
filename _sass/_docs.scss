@@ -1,0 +1,35 @@
+.doc {
+    padding: 20px;
+    margin: 3px;
+    border-radius: 5px;
+    align-items: center;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        &:before {
+            content: "\f56d";
+            font-family: FontAwesome;
+            margin-right: 5px;
+         }
+    }
+
+    &:before {
+        content: "\f15b";
+        font-family: FontAwesome;
+        margin-right: 5px;
+    }
+}
+
+.column.fit{
+    min-width:fit-content;
+}
+
+.row.left{
+    justify-content: left;
+}
+
+.doc a {
+    font-weight: $bold-weight;
+}

@@ -1,0 +1,73 @@
+- name: Ida Mickiewicz-Florczak
+  img: /assets/img/Ida.jpg
+  group: board
+  pl:
+    title: osoba prezesująca
+    bio: >-
+      Trenerka równościowa, edukatorka seksualna i aktywistka na rzecz społeczności LGBTQ+.
+      Prezeska Stowarzyszenia Fabryka Równości. Absolwentka Wydziału Nauk o Wychowaniu na Uniwersytecie Łódzkim. Terapeutka uzależnień behawioralnych, od blisko 4 lat pracuje w placówkach przeciwdziałających przemocy w rodzinie w Łodzi.
+  en:
+    title: chaiperson
+    bio: >-
+      Equality coach, sex educator and LGBTQ+ activist. President of the Equality Factory Association. Graduate of the Faculty of Education at the University of Lodz. Therapist of behavioral addictions, for nearly 4 years she has been working in institutions counteracting domestic violence in Łódź.
+- name: Maciej Kucharski
+  img: /assets/img/Maciek.jpg
+  group: board
+  pl: 
+    title: osoba wiceprezesująca  
+    bio: >-
+      Swoją działalność aktywistyczną rozpoczął kilka lat temu w Stowarzyszeniu Asfera. Obecnie związany przede wszystkim ze Stowarzyszeniem Fabryka Równości, w którym działa na rzecz praw oraz widoczności osób spod parasola LGBTQIA+. Głęboko wierzy, że poprzez swoją aktywność w obszarze promocji edukacji równościowej i antydyskryminacyjnej przyczynia się do szerzenia postaw akceptacji wśród społeczeństwa wobec osób nieheteronormatywnych.
+      Prywatnie absolwent i pracownik Politechniki Łódzkiej oraz pasjonat jeździectwa i skandynawskiej muzyki.
+  en:
+    title: vice-chairperson
+    bio: >-
+      He started his activist activity a few years ago at the Asfera Association. Currently, he is primarily associated with the Equality Factory Association, where he works for the rights and visibility of people under the umbrella of LGBTQIA+. She deeply believes that through her activities in the field of promotion of equality and anti-discrimination education, she contributes to spreading attitudes of acceptance among society towards non-heteronormative people.
+      Privately a graduate and employee of the Lodz University of Technology and passionate about equestrianism and Scandinavian music.
+- name: Miłosz Herka
+  img: /assets/img/Milosz.png
+  group: board
+  pl:  
+    title: osoba członkowska zarządu
+    bio: >-
+      Aktywista, lider młodzieżowy i edukator.  Członek Stowarzyszenia od 2018 roku. Związany także z Amnesty International, lokalnie oraz międzynarodowo.
+      Magister genetyki i inżynier biotechnologii, wielbiciel fantastyki, gotowania i ludzi. Jest zaangażowany, bo bycie aktywnym społecznie i obywatelsko uznaje za swoją misję i hobby.
+  en: 
+    title: board member
+    bio: >-
+      Activist, youth leader and educator.  Member of the Association since 2018. He is also affiliated with Amnesty International, locally and internationally.
+      Master of Genetics and Biotechnology Engineer, fan of fantasy, cooking and people. He is committed because he considers being socially and civically active as his mission and hobby.
+- name: Aleksander Brylski
+  img: /assets/img/Aleks.jpg
+  group: board
+  pl: 
+    title: osoba członkowska zarządu
+    bio: >-
+      Aktywista i działacz społeczny, współorganizator łódzkich marszów równości, członek zarządu Stowarzyszenia Fabryka Równości. Zawodowo programista, magister informatyki.
+  en:
+    title: board member
+    bio: >-
+      Activist and social activist, co-organizer of equality marches in Łódź, member of the board of the Equality Factory Association. Professional programmer, master of computer science.
+- name: Charlie Nowacki
+  group: committee
+  img: /assets/img/Charlie.jpg
+  pl: 
+    title: osoba członkowska komisji rewizyjnej
+    bio: >-
+     Aktywista na rzecz społeczności LGBTQ+ oraz osób neuroróżnorodnych, działający w Fabryce Równości od stycznia 2021 roku. Swoją przygodę z aktywizmem zaczęło w szkolnej grupie Amnesty International w pierwszej klasie liceum. W stowarzyszeniu zajmuje się organizacją wydarzeń i tworzeniem treści na social media. Na co dzień osoba studencka, interesująca się treningiem głosu, gotowaniem i filmami sci-fi.
+  en: 
+    title: committee member
+    bio: >-
+      Activist for the LGBTQ+ community and neurodiverse people, working at Fabryka Równości since January 2021. Her adventure with activism began with the Amnesty International school group in the first year of high school. In the association he organizes events and creates content on social media. Everyday student, interested in voice training, cooking and sci-fi movies.
+- name: Joanna Ignatowicz
+  group: committee
+  img: /assets/img/Asia.jpg
+  pl: 
+    title: osoba członkowska komisji rewizyjnej
+    bio: >-
+      W Fabryce Równości od 2022 roku, chętnie angażuje się w projekty skierowane na współpracę i organizację wydarzeń kulturalnych lub edukacyjnych. Wspołzarządza kanałami social media i wspiera w innych działaniach propagujących równość.
+      Prywatnie miłośniczka zwierząt i dumna mama adoptowanego kocura. Interesują ją tematy równościowe, ale również gameplaye i wideoeseje na przeróżne tematy społeczno-kulturalne.
+  en:
+    title: committee member
+    bio: >-
+      At Equality Factory since 2022, she is willing to engage in projects aimed at cooperation and organization of cultural or educational events. She co-manages social media channels and supports other activities promoting equality.
+      Privately an animal lover and proud mother of an adopted cat. She is interested in equality issues, but also gameplay and video essays on various socio-cultural topics.

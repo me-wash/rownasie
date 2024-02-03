@@ -1,0 +1,43 @@
+body[data-theme="dark"] {
+    background-color: $dark-black;
+    color: $dark-text-base-color;
+
+    .navbar-wrapper {
+        background: $dark-purple;
+
+    }
+
+    .header svg {
+        fill: $dark-purple
+    }
+
+    footer {
+        background: $dark-purple;
+
+    }
+
+    h1:after {
+        background: $dark-purple;
+    }
+
+    // Link
+    p>a {
+
+        &:hover {
+            color: $dark-text-link;
+        }
+
+        &::after {
+            color: $dark-text-link;
+        }
+    }
+
+    // Footnore
+    .footnote {
+        color: $dark-text-link;
+    }
+
+    .team .team-overlay {
+        background: $dark-black;
+    }
+}

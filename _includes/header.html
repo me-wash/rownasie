@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    var defaultMode = "{{ site.mode }}";
+  </script>
+  <script src="/assets/js/script.js"></script>
+</head>
+
+<div class="header">
+  <img id="rotatingImage" src="/assets/img/Sygnet_kolor.png" alt="Rotating Image" class="rotating-image">
+  <svg viewBox="0 150 1100 315" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 0 0 H 1200 V 308 C 870 326 454 537 0 400 V 0"></path>
+  </svg>
+  <div class="content">
+    <div class="slogan">
+      <h1>
+        {%- assign lang = page.lang -%}
+        {%- if lang == "pl" -%}
+        {{ site.slogan.pl }}
+        {%- else -%}
+        {{ site.slogan.en }}
+        {%- endif -%}
+      </h1>
+    </div>
+  </div>
+</div>
+
+
