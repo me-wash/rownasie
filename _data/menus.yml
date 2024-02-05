@@ -7,8 +7,8 @@
   url: /support
   external: false
   lang: pl
-- title: Kontakt
-  url: /contact
+- title: Info
+  url: /info
   external: false
   lang: pl
 - title: Dokumenty
@@ -30,8 +30,8 @@
   url: /en/support
   external: false
   lang: en
-- title: Contact
-  url: /en/contact
+- title: Info
+  url: /en/info
   external: false
   lang: en
 - title: Docs

@@ -1,4 +1,4 @@
-@import "styles", "navbar", "dark", "header", "footer", "home", "docs";
+@import "styles", "navbar", "dark", "header", "footer", "home", "docs", "contact";
 ////////////-------- BASIC STYLING --------//////////// 
 *,
 *::before,
@@ -199,6 +199,7 @@ sup {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
    }
 
 @media (min-width: 576px) {
@@ -252,8 +253,8 @@ sup {
  }
 
  .column.contact{
-    min-width: 400px;
-    margin-left: 100px;
+    min-width: 450px;
+    margin-left: 70px;
   
  }
 

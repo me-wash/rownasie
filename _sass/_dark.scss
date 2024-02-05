@@ -2,9 +2,28 @@ body[data-theme="dark"] {
     background-color: $dark-black;
     color: $dark-text-base-color;
 
+    a#mode::before {
+        content: "\f185";
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 400;
+    }
+
+
     .navbar-wrapper {
         background: $dark-purple;
 
+    }
+
+    .lang-dropdown {
+        background-color: $dark-black;
+    }
+
+    .lang-dropdown a {
+        color: $dark-text-base-color
+    }
+
+    .lang-dropdown a:hover {
+        background-color: $black;
     }
 
     .header svg {
@@ -40,4 +59,14 @@ body[data-theme="dark"] {
     .team .team-overlay {
         background: $dark-black;
     }
+
+    .category .category-content,
+    .category .thumb-icon {
+        color: $dark-text-base-color
+    }
+
+    .category a {
+        color: $dark-text-base-color
+    }
+
 }

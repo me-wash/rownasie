@@ -8,12 +8,20 @@
         </div>
         <div class="row">
             <div class="column contact">
+                {% assign profile = site.data.profile.organisation %}
+                {% assign lang = page.lang %}
+                {% if lang == "pl" %}
+                <p><strong>{{profile.name.pl}}</strong></p> {% else %}
+                <p><strong>{{profile.name.en}}</strong></p> {% endif %}
 
                 <div class="category">
-                    {% assign profile = site.organisation %}
-                    <p><strong>{{profile.name}}</strong></p>
-                    <div class="address"> {{ profile.address}}</div>
-
+                    <div class="address">
+                        <div class="box">
+                            {% if lang == "pl" %}
+                            {{profile.address.pl}} {% else %}
+                            {{profile.address.en}} {% endif %}
+                        </div>
+                    </div>
                 </div>
 
                 <div class="category">
@@ -25,8 +33,6 @@
                         {% assign #3 = tel | slice: 8, 3 | append: " " %}
                         {% assign formattedTel = locale | append: #1 | append: #2 | append: #3 %}
                         <a href="tel:{{ formattedTel }}">{{ formattedTel }}</a>
-                        
-
                     </div>
                 </div>
 
@@ -35,6 +41,40 @@
                         <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>
                     </div>
                 </div>
+
+                <div class="category">
+                    <div class="info">
+                        <div class="box">
+                            {% if lang == "pl" %}
+                            NIP: {{profile.tax_no}}<br>
+                            KRS: {{profile.rej_no}}
+                            {% else %}
+                            Tax No: {{profile.tax_no}}<br>
+                            Registration No: {{profile.rej_no}}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="bank">
+                        <div class="box">
+{% assign bank = site.data.profile.bank %}
+<p><strong>{% if lang == "pl" %}
+Konto bankowe organizacji:
+{% else %}
+Organisation's bank account:
+{% endif %}</strong></p>
+{{bank.name}} <br>
+IBAN: {{bank.iban}} <br>
+SWIFT: {{bank.swift}}i
+
+ 
+       
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

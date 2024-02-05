@@ -2,25 +2,7 @@
 title: Fabryka Równości # site title
 timezone: Europe/Warsaw # set your timezone
 mode: light # default theme "dark" | "light"
-slogan: 
-  pl: "To z fabryk wychodzą rewolucje!"
-  en: "Revolutions start in factories!"
 
-# Profile settings
-organisation:
-  name: Stowarzyszenie Fabryka Równości
-  address: ul. Jaracza 6/7U, 90-268 Łódź
-  tax_no: "7252075923"
-  rej_no: "0000502422"
-  email: poczta@rownasie.org
-  tel: +48667414449
-  description: Łódzka organizacja na rzecz osób LGBTQ+
-  
-bank:
-  name: Santander Bank Polska S.A.
-  iban: 91 1090 2705 0000 0001 4897 3529
-  SWIFT: WBKPPLPP
-  
   
 # URL settings
 url: " " 

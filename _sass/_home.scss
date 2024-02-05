@@ -146,13 +146,16 @@
 .category .thumb-icon {
   text-align: center;
   align-items: center;
-  color: $light
+  transition: all 1s ease-in 
+}
+
+.category a {
+  color: $text-base-color
 }
 
 .thumb-icon {
   font-size: 27px;
   padding-bottom: 10px;
-  color: $light
 }
 
 ////////// ---- DONATE ----- /////////
@@ -202,12 +205,15 @@
 
 .category-content.description {
   display: none;
-
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .category-content.description.active {
   display: block;
-}
+  opacity: 1;
+  visibility: visible; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;}
 
 .support-notification {
   position: absolute;

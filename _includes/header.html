@@ -17,9 +17,9 @@
       <h1>
         {%- assign lang = page.lang -%}
         {%- if lang == "pl" -%}
-        {{ site.slogan.pl }}
+        {{ site.data.profile.organisation.slogan.pl }}
         {%- else -%}
-        {{ site.slogan.en }}
+        {{ site.data.profile.organisation.slogan.en }}
         {%- endif -%}
       </h1>
     </div>

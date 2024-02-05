@@ -29,8 +29,8 @@
     en: Youth Group
   icon: fa-solid fa-otter
   description:
-    pl: Grupa wsparcia dla osób queer < 18 lat
-    en: Support group for queer people < 18 years old
+    pl: Grupa wsparcia dla osób queer poniżej 18 lat
+    en: Support group for queer people below 18 years old
   visibility: true
   open: false
   path: 

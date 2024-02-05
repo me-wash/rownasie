@@ -1,23 +1,54 @@
-.address::before{
- 
-        content: "\f3c5";
-        font-family: FontAwesome;
-        margin-right: 5px;
-  
+.address::before {
+
+    content: "\f3c5";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 20px;
+
 }
 
-.tel::before{
- 
+
+.tel::before {
+
     content: "\f095";
-    font-family: FontAwesome;
-    margin-right: 5px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 20px;
 
 }
 
-.email::before{
- 
-    content: "\f0e0";
-    font-family: FontAwesome;
-    margin-right: 5px;
+.email::before {
 
+    content: "\f0e0";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 20px;
+
+}
+
+.info::before {
+
+    content: "\f66f";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 20px;
+
+}
+
+.bank::before {
+
+    content: "\f555";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 20px;
+
+}
+
+.address,
+.tel,
+.email,
+.info,
+.bank {
+    display: flex;
+    align-items: center;
 }

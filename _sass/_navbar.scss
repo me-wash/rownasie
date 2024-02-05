@@ -1,4 +1,10 @@
 // Navbar
+a#mode::before {
+  content: "\f186";
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
 .navbar-wrapper {
   background: $purple;
   border-bottom: 1px solid $dark-light;
@@ -63,7 +69,8 @@
       opacity: 1;
       transition: 0.2s;
     }
-    &:before{
+
+    &:before {
       content: ".";
     }
 
@@ -86,7 +93,7 @@
   -webkit-user-select: none;
   justify-content: center;
 
-  a#mode  {
+  a#mode {
     position: relative;
     padding: 15px;
     justify-content: center;
@@ -94,6 +101,7 @@
     opacity: 0.7;
     color: $light;
     font-size: 20px;
+
     &:hover {
       cursor: pointer;
       opacity: 1;
@@ -103,42 +111,58 @@
   .menu-trigger {
     display: none;
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
-    padding: 15px;
+    padding: 5px;
     color: $light;
     opacity: 0.7;
-    
+
     &:hover {
       cursor: pointer;
       opacity: 1;
     }
   }
+
   .dropdown i {
-    font-size: 20px;
+    font-size: $base-font-size;
   }
+
   .lang-dropdown {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: $white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px black;
     z-index: 1;
     border-radius: 8px
   }
 
+  .dropdown::before {
+    content: "\f1ab";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+  }
+
   .lang-dropdown a {
-    color: black;
-    padding: 12px 16px;
+    color: $text-base-color;
+    padding: 8px;
     text-decoration: none;
     display: block;
   }
-  /* Change color of dropdown links on hover */
-.lang-dropdown a:hover {background-color: $dark-white;
-  border-radius: 8px}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .lang-dropdown {display: block; border-radius: 8px}
+  /* Change color of dropdown links on hover */
+  .lang-dropdown a:hover {
+    background-color: $dark-white;
+    border-radius: 8px
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .lang-dropdown {
+    display: block;
+    border-radius: 8px
+  }
 
 }
