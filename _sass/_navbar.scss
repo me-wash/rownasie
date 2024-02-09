@@ -2,10 +2,13 @@
 .navbar {
   height: 70px;
   position: relative;
-  border-bottom: 1px solid $light;
   background: $purple;
   display: flex;
   justify-content: center;
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+
 
 }
 
@@ -20,6 +23,7 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
+  background: $purple;
 
 
   .logo {
@@ -154,6 +158,8 @@
     left: 0;
     right: 0;
     justify-content: right;
+    z-index: 2;
+    text-align: center;
 
     .logo {
 
@@ -170,6 +176,7 @@
       left: 0;
       top: 10px;
       padding: 10px;
+      margin-left: 20px;
       cursor: pointer;
       z-index: 2;
       color: $light;
@@ -182,17 +189,29 @@
       }
     }
 
+    a#mode {
+      opacity: 1;
+    }
+
     a#mode::before {
       font-size: 25px;
     }
 
     .dropdown {
-      z-index: 2
+      z-index: 2;
+      margin-right: 20px;
+      opacity: 1;
     }
 
     .dropdown::before {
       font-size: 25px;
     }
+    .dropdown.active::before {
+      content: "\f1ab";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: $black;
+  }
 
 
     input[id="menu-trigger"]:not(:checked)~.trigger {
@@ -221,10 +240,14 @@
       display: block;
       box-sizing: border-box;
       font-size: 1.1em;
+
       &:first-child {
         margin-left: 0;
       }
-   }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     .menu-link.active {
       color: $black;
@@ -243,18 +266,18 @@
 
     .options-container a {
       color: $black;
-      margin: 50px;
+      margin: 30px;
       display: block;
       box-sizing: border-box;
       font-size: 1.1em;
       opacity: 0.8;
 
-      &:hover{
-       font-weight: $bold-weight;
-       opacity: 1;
+      &:hover {
+        opacity: 1;
+        transition: 0.2s;
       }
 
-      
+
     }
 
     input[id="dropdown-trigger"]:checked~.full-screen-overlay {

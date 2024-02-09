@@ -80,9 +80,3 @@ a#mode::before {
     font-size: 20px;
 }
 
-.dropdown.active::before {
-    content: "\f1ab";
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    color: $black;
-}
