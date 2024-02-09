@@ -2,12 +2,12 @@ body[data-theme="dark"] {
     background-color: $dark-black;
     color: $dark-text-base-color;
 
-    a#mode::before {
+ a#mode::before {
         content: "\f185";
         font-family: 'Font Awesome 6 Free';
         font-weight: 400;
     }
-
+    
 
     .navbar-wrapper {
         background: $dark-purple;
@@ -25,6 +25,10 @@ body[data-theme="dark"] {
     .lang-dropdown a:hover {
         background-color: $black;
     }
+
+    .text-effect .overlay {
+        background-color: $dark-purple;
+        }
 
     .header svg {
         fill: $dark-purple

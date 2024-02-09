@@ -2,7 +2,6 @@ footer {
   width:100%;
   background-color: $purple;
   border-top: 1px solid $dark-light;
-
   bottom: 0;
 }
 
@@ -81,4 +80,11 @@ text-decoration-line: none;
   margin-top: auto;
   text-align: center;
   color: $light;
+  display: inline;
+}
+
+.footer-bottom span {
+  font-family: $font-family;
+  font-size: $base-font-size;
+  display: inline
 }

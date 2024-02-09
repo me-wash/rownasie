@@ -1,23 +1,22 @@
-<head>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+<div class="navbar" role="navigation">
+  <nav class="menu">
 
-  <script>
-    var defaultMode = "{{ site.mode }}";
-  </script>
-  <script src="/assets/js/script.js"></script>
-</head>
-<header>
-  <div class="navbar-wrapper">
-    <div class="navbar" role="navigation">
-      <nav class="menu-left">
-        {%- assign lang = page.lang -%}
-        {%- if lang == "pl" -%}
-        <a href="/"><img src="/assets/img/logo_czarnobiałe_kontra_pl.svg" alt="Logo"></a>
-        {%- else -%}
-        <a href="/en/"><img src="/assets/img/logo_bw_contra_eng.svg" alt="Logo"></a>
-        {%- endif -%}
-      </nav>
-      <nav class="menu-middle">
+    <div class="logo">
+      {%- assign lang = page.lang -%}
+      {%- if lang == "pl" -%}
+      <a href="/"><img src="/assets/img/logo_czarnobiałe_kontra_pl.png" alt="Logo"></a>
+      {%- else -%}
+      <a href="/en/"><img src="/assets/img/logo_bw_contra_eng.png" alt="Logo"></a>
+      {%- endif -%}
+    </div>
+
+    <label for="menu-trigger">
+      <span class="menu-icon" id="menu-icon">
+      </span>
+    </label>
+    <input type="checkbox" id="menu-trigger" class="menu-trigger" onclick="switchIcon()"/>
+    <div class="trigger">
+      <div class="trigger-container">
         {%- assign url = page.url -%}
         {%- assign menus = site.data.menus -%}
         {%- assign lang = page.lang -%}
@@ -37,24 +36,61 @@
         {%- endfor -%}
         {%- else -%}
         {%- endif -%}
-      </nav>
-      <nav class="menu-right">
-        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
-        <a id="mode" title="theme"></a>
-        <div class="dropdown">
-          <div class="lang-dropdown">
-            {% assign current_lang = page.lang | default: "pl" %}
-
-            {% if current_lang == "pl" %}
-            <a href="{{ page.url }}">Polski</a>
-            <a href="{{ site.baseurl }}/en{{ page.url }}">English</a>
-            {% else %}
-            <a href="{{ page.url | remove_first: '/en' }}">Polski</a>
-            <a href="{{ page.url }}">English</a>
-            {% endif %}
-          </div>
-        </div>
-      </nav>
+      </div>
     </div>
-  </div>
-</header>
+
+    <a id="mode"></a>
+    <input type="checkbox" id="dropdown-trigger" class="dropdown-trigger" onclick="switchIcon()"/>
+    <label for="dropdown-trigger">
+      <div class="dropdown" id="dropdown-icon">
+        <div class="lang-dropdown">
+          {% assign current_lang = page.lang | default: "pl" %}
+          {% if current_lang == "pl" %}
+          <a href="{{ page.url }}">Polski</a>
+          <a href="{{ site.baseurl }}/en{{ page.url }}">English</a>
+          {% else %}
+          <a href="{{ page.url | remove_first: '/en' }}">Polski</a>
+          <a href="{{ page.url }}">English</a>
+          {% endif %}
+        </div>
+      </div>
+    </label>
+    
+    <div class="full-screen-overlay">
+      <div class="options-container">
+        {% assign current_lang = page.lang | default: "pl" %}
+        {% if current_lang == "pl" %}
+        <a href="{{ page.url }}">Polski</a>
+        <a href="{{ site.baseurl }}/en{{ page.url }}">English</a>
+        {% else %}
+        <a href="{{ page.url | remove_first: '/en' }}">Polski</a>
+        <a href="{{ page.url }}">English</a>
+        {% endif %}
+      </div>
+    </div>
+    
+
+  </nav>
+</div>
+<script>
+  function switchIcon() {
+    var checkBox1 = document.getElementById("menu-trigger");
+    var checkBox2 = document.getElementById("dropdown-trigger");
+    var icon1 = document.getElementById("menu-icon");
+    var icon2 = document.getElementById("dropdown-icon");
+  
+    if (checkBox1.checked == true) {
+      icon1.classList.add('active');
+    } else {
+      icon1.classList.remove('active');
+    }
+
+    if (checkBox2.checked == true) {
+      icon2.classList.add('active');
+    } else {
+      icon2.classList.remove('active');
+    }
+
+  }
+  
+    </script>

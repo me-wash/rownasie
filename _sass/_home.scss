@@ -96,23 +96,28 @@
   margin: 20px;
   cursor: pointer;
   background: transparent;
-  border-radius: 30px;
-  border: 3px solid $text-link-active;
+  border-radius: 5px;
+  border: 2px solid $text-base-color;
   font-family: $font-family;
-  color: $text-link-active;
+  color: $text-base-color;
   font-weight: $bold-weight;
+  opacity: 0.7;
+  &:hover{
+    opacity: 0.9;
+  }
 }
 
 .tab-btn.active {
   color: $white;
   border: 0;
-  background: $text-link-active;
+  background: $text-base-color;
   transition: all 0.3s ease;
+  opacity: 0.9;
 }
 
 .column.card {
   display: none;
-  opacity: 0;
+  opacity: 0.9;
 }
 
 /* Show only columns with the selected group */

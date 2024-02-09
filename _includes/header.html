@@ -12,18 +12,19 @@
   <svg viewBox="0 150 1100 315" xmlns="http://www.w3.org/2000/svg">
     <path d="M 0 0 H 1200 V 308 C 870 326 454 537 0 400 V 0"></path>
   </svg>
-  <div class="content">
-    <div class="slogan">
-      <h1>
-        {%- assign lang = page.lang -%}
-        {%- if lang == "pl" -%}
-        {{ site.data.profile.organisation.slogan.pl }}
-        {%- else -%}
-        {{ site.data.profile.organisation.slogan.en }}
-        {%- endif -%}
-      </h1>
-    </div>
+  <div class="text-effect effect">
+    <div class="overlay"></div>
+    <p>
+      {%- assign lang = page.lang -%}
+      {%- if lang == "pl" -%}
+      <span>To&nbsp;z&nbsp;fabryk</span>
+      <span>wychodzą</span>
+      <span>rewolucje!</span>
+      {%- else -%}
+      <span>Revolutions</span>
+      <span>start</span>
+      <span>in&nbsp;factories!</span>
+      {%- endif -%}
+    </p>
   </div>
 </div>
-
-

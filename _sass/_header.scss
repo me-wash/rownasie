@@ -1,71 +1,84 @@
 .header {
-    width: 100%;
-    height: auto; /* Set height to 100% of the viewport height */
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+
 }
-    .content {
-      position: absolute;
-      left: 1%;
-      top: 23%; 
-      text-transform: uppercase;
-                    
-    }
 
-    .slogan {
-      max-width: 80%;
-      max-height: fit-content;
-      width: 50%;
-      padding-right: 3vw;
-      border-right: 2px solid $light;
-      margin: 0 auto;
-      transform: translate(-50%, -50%);
-      opacity: 0; /* Start with zero opacity */
-      animation: fadeInRight 2s ease-out forwards;
-            
-    }
+.effect {
+  margin: 40px;
+  width: fit-content;
+}
 
-    .content h1 {
-      font-size: 3vw;
-      color: $light;
-      text-align: right;
-      word-wrap: break-word;
-      inline-size: 0.3;
-      line-height: 1;
-      
-    }
-     
+span {
+  display: block;
+  font-size: 3.5vw;
+
+}
+
+span:first-child {
+  font-family: "Montserrat Light", sans-serif;
+}
+
+span:last-child {
+  font-family: "Montserrat ExtraBold", sans-serif;
+}
+
+.text-effect {
+  position: relative;
+  padding: 10px;
+  padding-right: 3vw;
+  overflow: hidden;
+  left: 23vw;
+  top: -25vw;
+  margin-bottom: -12vw
   
-  .header svg {
-    display: block;
-    fill: $purple;  
+}
+
+.text-effect p {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: right;
+  color: $light
+}
+
+.text-effect .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: $purple;
+  border-left: 0.5vw solid $light;
+  transform: translateX(0%);
+  animation: translateOverlay 1.4s forwards cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+@keyframes translateOverlay {
+  to {
+    transform: translateX(99%);
   }
-  .header img {
-    position: absolute;
-    max-width: 40%;
-    top: 56.5%;
-    left: 67%;
-    transform: translateX(-50%);
-    animation: rotateImage 20s linear infinite; 
-   }
-  
-  @keyframes rotateImage {
-    from {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
+}
+
+
+.header svg {
+  display: block;
+  fill: $purple;
+}
+
+.header img {
+  position: absolute;
+  max-width: 40%;
+  top: 15.1vw;
+  left: 70vw;
+  transform: translateX(-50%);
+  animation: rotateImage 20s linear infinite;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
-  
-  
+}
