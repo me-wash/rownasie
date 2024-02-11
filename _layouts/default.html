@@ -21,21 +21,9 @@ layout: compress
 
 <body data-theme="{{ site.mode }}" class="notransition" lang="{{page.lang | default: site.lang }}">
 
-  <script>
-
-    window.addEventListener('scroll', function () {
-      console.log('Scrolling...');
-      var header = document.querySelector('.navbar');
-      var parallaxSection = document.querySelector('.parallax-section');
-      var parallaxHeight = parallaxSection.offsetHeight; // Get the height of the parallax section
-
-      if (window.scrollY > parallaxHeight) {
-        header.classList.add('scrolled'); // Add a class to change the styling
-      } else {
-        header.classList.remove('scrolled'); // Remove the class if scrolled back to the top
-      }
-    });
-  </script>
+  <div class="parallax">
+    {% include navbar.html %}
+  </div>
   <div class="wrapper">
     <main aria-label="Content">
       {{ content }}
@@ -43,4 +31,5 @@ layout: compress
     {% include footer.html %}
   </div>
 </body>
+
 </html>
