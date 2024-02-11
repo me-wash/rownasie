@@ -270,6 +270,33 @@
   }
 }
 
+//Parallax
+.parallax {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin: 0;
+  padding: 0 0.75rem;
+
+  overflow: visible;
+  /* The image used */
+  background: yellow;
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0px;
+  padding: 0px
+}
+
 
 // Content
 .posts-item-note {

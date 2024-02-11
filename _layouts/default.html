@@ -23,29 +23,19 @@ layout: compress
 
   <script>
 
-window.addEventListener('scroll', function() {
-  console.log('Scrolling...');
-  var header = document.querySelector('.navbar');
-  var parallaxSection = document.querySelector('.parallax-section');
-  var parallaxHeight = parallaxSection.offsetHeight; // Get the height of the parallax section
+    window.addEventListener('scroll', function () {
+      console.log('Scrolling...');
+      var header = document.querySelector('.navbar');
+      var parallaxSection = document.querySelector('.parallax-section');
+      var parallaxHeight = parallaxSection.offsetHeight; // Get the height of the parallax section
 
-  if (window.scrollY > parallaxHeight) {
-    header.classList.add('scrolled'); // Add a class to change the styling
-  } else {
-    header.classList.remove('scrolled'); // Remove the class if scrolled back to the top
-  }
-});
-
-
-
-
+      if (window.scrollY > parallaxHeight) {
+        header.classList.add('scrolled'); // Add a class to change the styling
+      } else {
+        header.classList.remove('scrolled'); // Remove the class if scrolled back to the top
+      }
+    });
   </script>
-
-
-
-  <div class="parallax">
-    {% include navbar.html %}
-  </div>
   <div class="wrapper">
     <main aria-label="Content">
       {{ content }}
@@ -53,32 +43,4 @@ window.addEventListener('scroll', function() {
     {% include footer.html %}
   </div>
 </body>
-<style>
-  .parallax {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    margin: 0;
-    padding: 0 0.75rem;
-
-    overflow: visible;
-    /* The image used */
-    background-image: url("/assets/img/Aleks.jpg");
-
-    /* Set a specific height */
-    min-height: 1000px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    margin: 0px;
-    padding: 0px
-  }
-</style>
-
 </html>
