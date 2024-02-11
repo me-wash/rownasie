@@ -1,0 +1,24 @@
+# Profile settings
+organisation:
+  name: 
+    pl: Stowarzyszenie Fabryka Równości
+    en: Equality Factory Association
+  address: 
+    pl: ul. Jaracza 6/7U, 90-268 Łódź
+    en: Jaracza St. 6/7U, 90-268 Lodz, Poland
+  tax_no: "7252075923"
+  rej_no: "0000502422"
+  email: poczta@rownasie.org
+  tel: +48667414449
+  description: 
+    pl: Łódzka organizacja na rzecz osób LGBTQ+
+    en: LGBTQ organisation based in Lodz, Poland
+  slogan: 
+    pl: "To z fabryk wychodzą rewolucje!"
+    en: "Revolutions start in factories!"
+  
+bank:
+  name: Santander Bank Polska S.A.
+  iban: PL91 1090 2705 0000 0001 4897 3529
+  swift: WBKPPLPP
+  

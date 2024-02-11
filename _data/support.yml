@@ -1,0 +1,52 @@
+- name: 
+    pl: Grupa Queer
+    en: Group "Queer"
+  icon: fa-solid fa-rainbow
+  description: 
+    pl: Ogólna grupa wsparcia dla osób LGBTQ+
+    en: General LGBTQ+ support group
+  visibility: true
+  open: true
+  path: 
+    pl: grupa-queer.md
+    en: group-queer.md
+
+- name: 
+    pl: Grupa Trans
+    en: Group "Trans"
+  icon: fa-solid fa-transgender
+  description: 
+    pl: Grupa wsparcia dla osób transpłciowych binarnych i niebinarnych
+    en: Binary and non-binary transgender support group
+  visibility: true
+  open: true
+  path: 
+    pl: grupa-trans.md
+    en: group-trans.md
+
+- name:
+    pl: Grupa Młodzieżowa
+    en: Youth Group
+  icon: fa-solid fa-otter
+  description:
+    pl: Grupa wsparcia dla osób queer poniżej 18 lat
+    en: Support group for queer people below 18 years old
+  visibility: true
+  open: false
+  path: 
+    pl: grupa-mlodziezowa.md
+    en: group-youth.md
+
+- name: 
+    pl: Terapie indywidualne
+    en: Therapies
+  icon: fa-solid fa-comments
+  description:
+    pl: Terapie indywidualne z psycholożką
+    en: Individual therapy with a psychologist
+  visibility: true
+  open: false
+  path: 
+    pl: terapie.md
+    en: therapy.md
+    

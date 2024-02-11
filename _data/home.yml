@@ -1,0 +1,43 @@
+# --- polish content ---
+pl:
+  about:
+    about: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    hashtags:
+      - Lorem
+      - ipsum
+      - dolor
+      - sit
+      - amet
+      - consectetur
+  what we do:
+    activism: ff
+    support: ff
+    education: ff
+  donate: 
+    text: >-
+      Nasze działania finansujemy wyłącznie ze składek członkowskich, darowizn i grantów projektowych. Nie prowadzimy działalności gospodarczej oraz nie mamy stałego zysku – wszystkie osoby działające w Fabryce Równości wykonują swoją pracę wolontariacko i nie otrzymują wynagrodzenia. Wesprzyj nas w budowaniu akceptacji i szacunku! Jesteśmy wdzięczn_ za każdą wpłatę!
+      Przekazane środki zostaną przeznaczone na ogólną realizację celów statutowych Stowarzyszenie, o ile w tytule przelewu nie zostanie określony cel szczególowy (np. wsparcie psychologiczne).
+    url: https://zrzutka.pl/z9cbwy/pay
+
+en:
+  about:
+    about: >-
+      EN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    hashtags:
+      - enLorem
+      - enipsum
+      - endolor
+      - ensit
+      - enamet
+      - enconsectetur
+  what we do:
+    activism: enff
+    support: enff
+    education: enff
+  donate: 
+    text: >-
+      We finance our activities exclusively from membership fees, donations and project grants. We do not run a business and we do not have a steady profit – all people working in the Equality Factory do their work voluntarily and receive no remuneration. Support us in building acceptance and respect! We are grateful_ for every deposit! The donated funds will be used for the general realization of the statutory objectives of the Association, unless a specific purpose is specified in the title of the transfer (e.g. psychological support).
+    url: https://zrzutka.pl/z9cbwy/pay
