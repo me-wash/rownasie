@@ -23,6 +23,14 @@ layout: compress
 
   <div class="parallax">
     {% include navbar.html %}
+    <div class="menu-left">
+      {%- assign lang = page.lang -%}
+      {%- if lang == "pl" -%}
+      <a href="/"><img src="/assets/img/logo_czarnobiałe_kontra_pl.png" alt="Logo"></a>
+      {%- else -%}
+      <a href="/en/"><img src="/assets/img/logo_bw_contra_eng.png" alt="Logo"></a>
+      {%- endif -%}
+    </div>
   </div>
   <div class="wrapper">
     <main aria-label="Content">

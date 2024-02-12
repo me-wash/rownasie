@@ -282,10 +282,10 @@
 
   overflow: visible;
   /* The image used */
-  background: linear-gradient(to bottom, $purple 0%, $white 100%);
+  background: $purple;
 
   /* Set a specific height */
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
 
   /* Create the parallax scrolling effect */
@@ -298,6 +298,11 @@
   padding: 0px
 }
 
+.menu-left img {
+  float: left;
+  max-width: 130px;
+  max-height: auto;
+}
 
 // Content
 .posts-item-note {
