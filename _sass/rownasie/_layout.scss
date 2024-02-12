@@ -282,7 +282,7 @@
 
   overflow: visible;
   /* The image used */
-  background: $purple;
+  background: linear-gradient(to bottom, $purple 0%, $white 100%);
 
   /* Set a specific height */
   min-height: 100vh;
