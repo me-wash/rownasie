@@ -271,115 +271,7 @@
 }
 
 //Parallax
-.parallax {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  margin: 0;
-  padding: 0 0.75rem;
 
-  overflow: hidden;
-  /* The image used */
-  background-image: url("/assets/img/Aleks.jpg");
-
-  /* Set a specific height */
-  min-height: 90vh;
-  width: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  margin: 0px;
-  padding: 0px
-}
-
-.menu-left img {
-  float: left;
-  max-width: 130px;
-  max-height: auto;
-}
-
-.effect {
-  margin: 40px;
-  width: fit-content;
-}
-
-.header span {
-  display: block;
-  font-size: 3.5vw;
-
-}
-
-span:first-child {
-  font-family: "Montserrat Light", sans-serif;
-}
-
-span:last-child {
-  font-family: "Montserrat ExtraBold", sans-serif;
-}
-
-.text-effect {
-  position: relative;
-  padding: 10px;
-  padding-right: 3vw;
-  overflow: hidden;
-  left: 23vw;
-  top: -25vw;
-  margin-bottom: -12vw
-  
-}
-
-.text-effect p {
-  margin: 0;
-  text-transform: uppercase;
-  text-align: right;
-  color: $light
-}
-
-.text-effect .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: $purple;
-  border-left: 0.5vw solid $light;
-  transform: translateX(0%);
-  animation: translateOverlay 1.4s forwards cubic-bezier(0.85, 0, 0.15, 1);
-}
-
-@keyframes translateOverlay {
-  to {
-    transform: translateX(99%);
-  }
-}
-
-
-.header svg {
-  display: block;
-  fill: $purple;
-}
-
-.header img {
-  position: absolute;
-  max-width: 40%;
-  top: 15.1vw;
-  left: 70vw;
-  transform: translateX(-50%);
-  animation: rotateImage 20s linear infinite;
-}
-
-@keyframes rotateImage {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
 
 // Content
 .posts-item-note {
@@ -429,6 +321,53 @@ span:last-child {
     }
   }
 }
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header img {
+  position: relative;
+  z-index: -1; /* Move the image behind other content */
+}
+
+.header svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.text-effect {
+  position: relative;
+  z-index: 1; /* Ensure the text is above the image */
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%; /* Adjust the height for desired parallax effect */
+  background-image: url('/assets/img/background-image.jpg'); /* Change the path to your background image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2; /* Move the background behind everything */
+}
+
 
 // Footer
 .footer {
