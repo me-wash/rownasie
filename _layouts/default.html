@@ -23,33 +23,7 @@ layout: compress
 
   <div class="parallax">
     {% include navbar.html %}
-    <div class="menu-left">
-      {%- assign lang = page.lang -%}
-      {%- if lang == "pl" -%}
-      <a href="/"><img src="/assets/img/logo_czarnobiałe_kontra_pl.png" alt="Logo"></a>
-      {%- else -%}
-      <a href="/en/"><img src="/assets/img/logo_bw_contra_eng.png" alt="Logo"></a>
-      {%- endif -%}
-    </div>
-    <div class="header">
-      <img id="rotatingImage" src="/assets/img/Sygnet_kolor.png" alt="Rotating Image" class="rotating-image">
-      <div class="text-effect effect">
-        <div class="overlay"></div>
-        <p>
-          {%- assign lang = page.lang -%}
-          {%- if lang == "pl" -%}
-          <span>To&nbsp;z&nbsp;fabryk</span>
-          <span>wychodzą</span>
-          <span>rewolucje!</span>
-          {%- else -%}
-          <span>Revolutions</span>
-          <span>start</span>
-          <span>in&nbsp;factories!</span>
-          {%- endif -%}
-        </p>
-      </div>
-    </div>
-  </div>
+ </div>
   <div class="wrapper">
     <main aria-label="Content">
       {{ content }}
