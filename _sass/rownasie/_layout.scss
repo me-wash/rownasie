@@ -310,10 +310,11 @@
 }
 
 .copyright {
-  position: relative;
+  position: absolute;
   bottom: 5px;
   right: 10px;
   font-family: $mono-family;
+  font-size: $small-font-size;
 }
 
 
