@@ -377,9 +377,11 @@ span:last-child {
   max-width: 800px;
 }
 
-.rotating-logo,
+.rotating-logo {
+  width: 40%
+}
 .nonrotating-logo {
-  
+  width: 60%
 }
 
 
