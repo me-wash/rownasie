@@ -147,6 +147,12 @@ body[data-theme="dark"] {
     }
   }
 
+  // Parallax
+
+  .parallax::before {
+    background-color: $black-overlay;
+  }
+
   // Post Item
   .post-item {
     &:not(:first-child) {

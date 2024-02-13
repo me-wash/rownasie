@@ -21,7 +21,9 @@ $black: #0d122b;
 $light: #ececec;
 $smoke: #d2c7c7;
 $gray: #6b7886;
-$white: #fff;
+$white: #ffffff;
+
+$white-overlay: rgba(255, 255, 255, 0.6);
 
 $purple: #322653;
 $pink: #FFC0D9;
@@ -33,11 +35,13 @@ $dark-text-base-color: #c7bebe;
 $dark-text-link-blue: #ff5277;
 $dark-text-link-blue-active: #ff2957;
 
-$dark-black: #131418;
+$dark-black: rgb(19, 20, 24);
 $dark-white: #eaeaea;
 $dark-light: #1b1d25;
 $dark-smoke: #4a4d56;
 $dark-gray: #767f87;
+
+$black-overlay: rgba(19, 20, 24, 0.6);
 
 // Width of the content area
 $wide-size: 890px;
