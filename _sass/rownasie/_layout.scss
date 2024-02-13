@@ -372,15 +372,18 @@ span:last-child {
   }
 }
 
-
-.rotating-logo {
-  position: absolute;
-  max-width: 40%;
-  top: 15.1vw;
-  left: 70vw;
-  transform: translateX(-50%);
-  animation: rotateImage 20s linear infinite;
+.image-container {
+  display: flex;
+  align-items: stretch; /* Aligns items to have equal heights */
 }
+
+.rotating-logo,
+.nonrotating-logo {
+  flex: 1; /* Flex property to distribute space equally */
+  height: auto; /* Allows images to scale proportionally */
+}
+
+
 
 @keyframes rotateImage {
   from {
