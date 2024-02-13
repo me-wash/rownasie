@@ -374,13 +374,12 @@ span:last-child {
 
 .image-container {
   display: flex;
-  align-items: stretch; /* Aligns items to have equal heights */
 }
 
 .rotating-logo,
 .nonrotating-logo {
   flex: 1; /* Flex property to distribute space equally */
-  height: auto; /* Allows images to scale proportionally */
+  height: 100%; /* Allows images to scale proportionally */
 }
 
 
