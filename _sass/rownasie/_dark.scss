@@ -121,15 +121,10 @@ body[data-theme="dark"] {
   }
 
   // Navbar
-  .navbar-wrapper {
-    background-color: $black-overlay;
-  }
-
   .navbar {
     border-color: $dark-light;
     .menu {
       a#mode {
-        color: $dark-light;
         .mode-sunny {
           display: block;
         }
@@ -141,11 +136,6 @@ body[data-theme="dark"] {
       .menu-link {
         color: $dark-white;
       }
-
-      .dropdown::before {
-        color: $dark-light
-      }
-
       @include media-query($on-mobile) {
         background-color: $dark-black;
         border-color: $dark-light;
@@ -156,10 +146,6 @@ body[data-theme="dark"] {
       }
     }
   }
-
-  // Parallax
-
-
 
   // Post Item
   .post-item {
