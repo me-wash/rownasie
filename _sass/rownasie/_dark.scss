@@ -121,6 +121,10 @@ body[data-theme="dark"] {
   }
 
   // Navbar
+  .navbar-wrapper {
+    background-color: $black-overlay;
+  }
+
   .navbar {
     border-color: $dark-light;
     .menu {
