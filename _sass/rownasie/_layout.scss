@@ -374,15 +374,14 @@ span:last-child {
 
 .image-container {
   display: flex;
-  max-width: 800px;
+  min-width: 800px;
   flex: 1;
 }
 
-.rotating-logo {
-  height: 100px
-}
+.rotating-logo ,
 .nonrotating-logo {
-  height: 100px
+  height: 100px;
+  width: auto
 }
 
 
