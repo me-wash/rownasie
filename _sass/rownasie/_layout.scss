@@ -376,12 +376,15 @@ span:last-child {
   display: flex;
   min-width: 800px;
   flex: 1;
+  align-content: center;
+  margin: 50px
 }
 
 .rotating-logo ,
 .nonrotating-logo {
-  height: 100px;
-  width: auto
+  height: auto;
+  width: auto;
+  margin: 0
 }
 
 
