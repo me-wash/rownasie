@@ -122,9 +122,13 @@ body[data-theme="dark"] {
 
   // Navbar
   .navbar {
-    border-color: $dark-light;
+    border-bottom: 1px solid $light;
     .menu {
+      color: $white;
       a#mode {
+        &:hover {
+          color: inherit;
+        }
         .mode-sunny {
           display: block;
         }
