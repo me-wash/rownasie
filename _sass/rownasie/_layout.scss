@@ -373,21 +373,27 @@ span:last-child {
 }
 
 .image-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   min-width: 800px;
   flex: 1;
   align-content: center;
-  margin: 50px
+  margin: 50px;
+
 }
 
 .rotating-logo ,
 .nonrotating-logo {
-  height: 200px;
+  max-height: 400px;
   width: auto;
   margin: 0
 }
 
-
+.rotating-logo {
+  animation: rotateImage 20s linear infinite;
+}
 
 @keyframes rotateImage {
   from {
