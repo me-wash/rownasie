@@ -1,18 +1,22 @@
-.navbar-wrapper{
+.navbar-wrapper {
   width: 100%;
   height: auto;
   position: fixed;
   z-index: 1000;
 }
+
 // Navbar
 .navbar {
 
   top: 0;
   left: 0;
   right: 0;
-  margin-left: auto; /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
-  max-width: calc(#{$wide-size} - (#{$spacing-full} * 2)); /* Adjust max-width as needed */
+  margin-left: auto;
+  /* Center horizontally */
+  margin-right: auto;
+  /* Center horizontally */
+  max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
+  /* Adjust max-width as needed */
   border-bottom: 1px solid $light;
   padding: $spacing-full - 15px $spacing-full;
   @extend %clearfix;
@@ -20,24 +24,26 @@
 
 .navbar-wrapper.scrolled {
   background-color: $white;
-  .navbar{
-  border-color: $light;
+
+  .navbar {
+    border-color: $light;
   }
-  
+
   transition: all 0.2s ease;
 
   .menu-link {
     color: $black;
   }
 
-  a#mode{
+  a#mode {
     color: $black;
+
     &:hover {
       color: $black;
     }
   }
 
-  .dropdown::before{
+  .dropdown::before {
     color: $black
   }
 
@@ -46,7 +52,7 @@
 
 // Navigation
 .menu {
-  position: relative;  
+  position: relative;
   user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -94,7 +100,7 @@
     top: 6px;
     position: relative;
     margin-left: 30px;
-    align-items: center;  
+    align-items: center;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 0.7;
@@ -165,7 +171,8 @@
     padding: 5px 8px;
     opacity: 0.7;
     letter-spacing: 0.3px;
-    &::after{
+
+    &::after {
       content: "."
     }
 
@@ -187,7 +194,8 @@
   .menu-link.active {
     opacity: 1;
     font-weight: 600;
-    &::before{
+
+    &::before {
       content: "> "
     }
   }
@@ -272,21 +280,18 @@
 
 //Parallax
 .parallax {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  margin: 0;
-  padding: 0 0.75rem;
-
-  overflow: hidden;
-  /* The image used */
-  background-image: url(/assets/img/DSC07901.jpg);
-
-  /* Set a specific height */
-  min-height: 90vh;
+  text-align: center;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -294,8 +299,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  margin: 0px;
-  padding: 0px
 }
 
 
@@ -474,22 +477,24 @@
     background-color: rgba(128, 128, 128, 0.1);
   }
 }
-.logo{
+
+.logo {
   margin-bottom: auto;
 }
 
 img {
   max-width: 50%;
- 
+
 }
 
 
-.social-icons i{
+.social-icons i {
   margin: 10px;
   /* Adjust the spacing between icons */
   color: $gray;
   font-size: 25px;
 }
-.social-icons a{
-text-decoration-line: none;
+
+.social-icons a {
+  text-decoration-line: none;
 }
