@@ -270,24 +270,35 @@
   }
 }
 
-// Parallax
-
+//Parallax
 .parallax {
-  text-align: center;
-  color: var(--color);
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin: 0;
+  padding: 0 0.75rem;
+
+  overflow: hidden;
+  /* The image used */
   background-image: url(/assets/img/DSC07901.jpg);
-  background-size: cover;
-  background-position: center;
-  
-/*  this is where the magic happens:  */
+
+  /* Set a specific height */
+  min-height: 90vh;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0px;
+  padding: 0px
 }
+
+
 
 // Content
 .posts-item-note {
