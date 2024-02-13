@@ -377,16 +377,12 @@ span:last-child {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  min-width: 800px;
-
   align-content: center;
-  margin: 50px;
-
 }
 
 .rotating-logo ,
 .nonrotating-logo {
-  height: 400px;
+  height: 100%;
   width: auto;
 
 }
