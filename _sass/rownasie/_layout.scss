@@ -329,15 +329,14 @@
 span {
   display: block;
   font-size: 3.5vw;
+  font-family: $font-familly;
+  font-weight: $light-weight;
 
-}
-
-span:first-child {
-  font-family: "Montserrat Light", sans-serif;
 }
 
 span:last-child {
-  font-family: "Montserrat ExtraBold", sans-serif;
+  font-family: $font-familly;
+  font-weight: $black-weight;
 }
 
 .text-effect {
@@ -374,12 +373,7 @@ span:last-child {
 }
 
 
-.header svg {
-  display: block;
-  fill: $purple;
-}
-
-.header img {
+.banner img {
   position: absolute;
   max-width: 40%;
   top: 15.1vw;
