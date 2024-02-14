@@ -4,6 +4,7 @@ title: Cześć
 permalink: /
 lang: pl
 ---
+
 {% assign lang = page.lang %}
 <div class="section-title">
   <h1>{% if lang == "pl" %}
@@ -24,7 +25,8 @@ lang: pl
       {% if lang == "pl" %}
         Zarząd {% else %} 
         Management Board {% endif %}</button>
-      <button class="tab-btn" data-group="committee">{% if lang == "pl" %}
+      <button class="tab-btn" data-group="committee">
+      {% if lang == "pl" %}
         Komisja Rewizyjna {% else %} 
         Audit Committee {% endif %}</button>
     </div>
@@ -58,6 +60,6 @@ lang: pl
     </div>
   </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
