@@ -1,10 +1,17 @@
 <div class="parallax">
     <div class="parallax-content">
 
- <h1>To z fabryk wychodza rewolucje!</h1>
-
-
-        <div class="copyright">Fot. Aleksander Brylski, 2022 </div>
+        {%- assign lang = page.lang -%}
+        {%- if lang == "pl" -%}
+        <span>To&nbsp;z&nbsp;fabryk</span>
+        <span>wychodzą</span>
+        <span>rewolucje!</span>
+        {%- else -%}
+        <span>Revolutions</span>
+        <span>start</span>
+        <span>in&nbsp;factories!</span>
+        {%- endif -%}
+        <div class="copyright">&copy; Aleksander Brylski, 2022 </div>
 
     </div>
 
