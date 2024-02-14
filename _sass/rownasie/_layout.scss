@@ -174,8 +174,8 @@
     }
 
     &:hover {
-      opacity: 1;
-      padding-bottom: 23px;
+      opacity: 0.8;
+      padding-bottom: 21px;
       border-bottom: 3px solid $black;
     }
 
@@ -193,7 +193,7 @@
   .menu-link.active {
     opacity: 1;
     font-weight: 600;
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     border-bottom: 3px solid $black;
 
     &::before {
