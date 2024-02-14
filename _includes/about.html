@@ -1,0 +1,94 @@
+{% assign lang = page.lang %}
+<div class="section-title">
+  <h1>{% if lang == "pl" %}
+    O nas {% else %} 
+    About {% endif %}</h1>
+</div>
+<div class="paragraph">
+  <div class="container">
+    {% if lang == "pl" %}
+    {{ site.data.home.pl.about.about}} {% else %}
+    {{ site.data.home.en.about.about}} {% endif %}
+  </div>
+  <div class="container tiles">
+    {%- assign hashtags_pl = site.data.home.pl.about.hashtags -%}
+    {%- assign hashtags_en = site.data.home.en.about.hashtags -%}
+    {% if lang == "pl" %}
+    {%- if hashtags_pl -%}
+    {%- for hashtag in hashtags_pl -%}
+    <div class="tile">{{hashtag}}</div>
+    {%- endfor -%}
+    {%- endif -%}
+    {% else %}
+    {%- if hashtags_en -%}
+    {%- for hashtag in hashtags_en -%}
+    <div class="tile">{{hashtag}}</div>
+    {%- endfor -%}
+    {%- endif -%}
+    {%- endif -%}
+  </div>
+</div>
+<div class="paragraph">
+  <div class="container">
+    <div class="tabs-navigation">
+      <button class="tab-btn active" data-group="board">{% if lang == "pl" %}
+        Zarząd {% else %} 
+        Management Board {% endif %}</h1></button>
+      <button class="tab-btn" data-group="committee">{% if lang == "pl" %}
+        Komisja Rewizyjna {% else %} 
+        Audit Committee {% endif %}</h1></button>
+    </div>
+
+    <div class="row">
+      {%- assign team = site.data.team -%}
+      {%- for member in team -%}
+            <div class="column card" data-group="{{ member.group }}">
+        <div class="team">
+          <div class="team-img">
+            <img src="{{ member.img }}" alt="{{ member.name }} Image">
+          </div>
+          <div class="team-content">
+            {% if lang == "pl" %}
+            <h2>{{ member.name }}</h2>
+            <h3>{{ member.pl.title }}</h3>
+            {% else %}
+            <h2>{{ member.name }}</h2>
+            <h3>{{ member.en.title }}</h3>
+            {%- endif -%}
+          </div>
+          <div class="team-overlay">
+            {% if lang == "pl" %}
+            <p>{{ member.pl.bio }}</p>
+            {% else %}
+            p>{{ member.en.bio }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+
+  $(document).ready(function () {
+    // Initial setup: show the Board group by default
+    showGroup('board');
+
+    // Handle tab button click
+    $('.tab-btn').on('click', function () {
+      const group = $(this).data('group');
+      showGroup(group);
+    });
+
+    function showGroup(group) {
+      // Hide all columns
+      $('.column').removeClass('active');
+
+      // Show only columns with the selected group
+      $(`.column[data-group="${group}"]`).addClass('active');
+    }
+  });
+</script>

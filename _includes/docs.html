@@ -1,0 +1,20 @@
+<div class="paragraph">
+    <div class="container">
+        {% assign docs = site.data.docs %}
+        {% for doc in docs %}
+        {% if doc.lang == page.lang %}
+        <div class="row left">
+            <div class="column fit">
+                <div class="doc">
+                    {% if doc.lang == "pl" %}                    
+                   <a href="{{doc.path}}" download="[Fabryka Równości] {{doc.name}}" target="_blank">{{doc.name}}</a>
+                    {% else %}
+                    <a href="{{doc.path}}" download="[Equality Factory] {{doc.name}}" target="_blank">{{doc.name}}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+</div>
