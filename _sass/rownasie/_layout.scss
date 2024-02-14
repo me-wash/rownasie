@@ -176,7 +176,7 @@
     &:hover {
       opacity: 0.8;
       padding-bottom: 21px;
-      border-bottom: 2px solid $purple;
+      border-bottom: 3px solid $black;
     }
 
     &:not(:last-child) {
@@ -194,7 +194,7 @@
     opacity: 1;
     font-weight: 600;
     padding-bottom: 21px;
-    border-bottom: 3px solid $purple;
+    border-bottom: 5px solid $black;
 
   }
 
@@ -267,6 +267,14 @@
         padding: 2px 0;
       }
     }
+
+    .menu-link.active {
+      padding-bottom: 0;
+      border-bottom: 0;
+      &::before {
+        content: "> ";
+        font-family: $mono-family
+      }
   }
 }
 
