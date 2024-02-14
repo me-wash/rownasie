@@ -329,16 +329,17 @@
 
 span {
   display: block;
-  font-size: 5vw;
+  font-size: 3.5vw;
   text-transform: uppercase;
 }
 
-span:not(:first-child){
-  font-family: "Montserrat Light", sans-serif;
+span.slogan-item {
+  font-family: $sans-family;
+  font-weight: $light-weight;
 }
 
-span:last-child {
-  font-family: "Montserrat ExtraBold", sans-serif;
+span.slogan-item.bold {
+  font-weight: $black-weight
 }
 
 
