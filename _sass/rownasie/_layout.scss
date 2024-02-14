@@ -325,17 +325,18 @@
   width: fit-content;
 }
 
-span {
+.parallax-content span {
   display: block;
   font-size: 3.5vw;
-  font-family: $sans-family;
-  font-weight: $light-weight;
 
 }
 
+.parallax-content span:not(:last-child) {
+  font-family: "Montserrat Light", sans-serif;
+}
+
 span:last-child {
-  font-family: $sans-family;
-  font-weight: $black-weight;
+  font-family: "Montserrat ExtraBold", sans-serif;
 }
 
 .text-effect {
