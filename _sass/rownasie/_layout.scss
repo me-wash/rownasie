@@ -175,8 +175,8 @@
 
     &:hover {
       opacity: 1;
-      padding-bottom: 25px;
-      border-bottom: 2px solid $black;
+      padding-bottom: 23px;
+      border-bottom: 3px solid $black;
     }
 
     &:not(:last-child) {
@@ -193,7 +193,7 @@
   .menu-link.active {
     opacity: 1;
     font-weight: 600;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     border-bottom: 3px solid $black;
 
     &::before {
