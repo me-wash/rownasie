@@ -69,6 +69,130 @@
 }
 
 //////////////// CONTENT
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+  justify-content: center;
+  }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+// About us
+
+.column.card {
+  display: none;
+}
+
+.column.card.active {
+  display: block;
+}
+
+.team {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  align-items: center;
+}
+
+.team:hover {
+  transform: rotateY(180deg);
+}
+
+.team .team-img {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team .team-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.team .team-content {
+  text-align: center;
+  align-items: center;
+}
+
+.team .team-content h2 {
+  font-size: 100%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.team .team-content h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.team .team-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: justify;
+  flex-direction: column;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: $white;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+}
+
+.team .team-overlay p {
+  font-size: $medium-font-size;
+  text-align: justify;
+}
+
+.tab-btn {
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid $text-base-color;
+  font-family: $sans-family;
+  color: $text-base-color;
+  font-weight: $bold-weight;
+  opacity: 0.7;
+  &:hover{
+    opacity: 0.9;
+  }
+}
+
+.tab-btn.active {
+  color: $white;
+  border: 0;
+  background: $text-base-color;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+
 .posts-item-note {
   font-size: $base-font-size;
   font-weight: 700;

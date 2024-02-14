@@ -1,28 +1,5 @@
 ////////// ---- ABOUT ----- /////////
 
-.container.tiles {
-  display: flex;
-  justify-content: left
-}
-
-.tile {
-  margin: 8px;
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: $bold-weight;
-  opacity: 0.7;
-
-  &:before {
-    content: "\23";
-    font-family: FontAwesome;
-    margin-right: 5px;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
 .team {
   padding: 20px;
   margin-bottom: 30px;
@@ -117,13 +94,10 @@
 
 .column.card {
   display: none;
-  opacity: 0.9;
 }
 
-/* Show only columns with the selected group */
 .column.card.active {
   display: block;
-  opacity: 1;
 }
 
 .tabs-navigation {
