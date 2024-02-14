@@ -56,5 +56,24 @@ window.addEventListener('scroll', function() {
           : area2.classList.remove("blurry");
     });
   })();
+
+  $(document).ready(function () {
+    // Initial setup: show the Board group by default
+    showGroup('board');
+
+    // Handle tab button click
+    $('.tab-btn').on('click', function () {
+      const group = $(this).data('group');
+      showGroup(group);
+    });
+
+    function showGroup(group) {
+      // Hide all columns
+      $('.column').removeClass('active');
+
+      // Show only columns with the selected group
+      $(`.column[data-group="${group}"]`).addClass('active');
+    }
+  });
   
 

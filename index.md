@@ -31,7 +31,7 @@ lang: pl
     <div class="row">
       {%- assign team = site.data.team -%}
       {%- for member in team -%}
-            <div class="column card" data-group="{{ member.group }}">
+        <div class="column card" data-group="{{ member.group }}">
         <div class="team">
           <div class="team-img">
             <img src="{{ member.img }}" alt="{{ member.name }} Image">
@@ -59,25 +59,5 @@ lang: pl
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function () {
-    // Initial setup: show the Board group by default
-    showGroup('board');
-
-    // Handle tab button click
-    $('.tab-btn').on('click', function () {
-      const group = $(this).data('group');
-      showGroup(group);
-    });
-
-    function showGroup(group) {
-      // Hide all columns
-      $('.column').removeClass('active');
-
-      // Show only columns with the selected group
-      $(`.column[data-group="${group}"]`).addClass('active');
-    }
-  });
-</script>
 
 
