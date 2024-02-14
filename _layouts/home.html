@@ -19,13 +19,13 @@ home: true
 
 
 </head>
-
 {% include header.html %}
 
 <body data-theme="{{ site.mode }}" class="notransition" lang="{{page.lang | default: site.lang }}">
 
   {% include navbar.html %}
   {% include home-banner.html %}
+  {% include about.html %}
 
   <div class="wrapper">
     <main aria-label="Content">
@@ -33,9 +33,7 @@ home: true
     </main>
     {% include footer.html %}
   </div>
+
 </body>
-<style>
-  
-</style>
 
 </html>
