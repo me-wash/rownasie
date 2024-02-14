@@ -369,3 +369,134 @@ mark,
     }
   }
 }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+  justify-content: center;
+  }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.horizontal{
+  display: flex;
+  
+}
+
+.column.contact{
+  min-width: 450px;
+  margin-left: 70px;
+
+}
+
+@media (min-width: 576px) {
+  .column {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .column {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .column {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+  }
+}
+
+.section-title {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding: 45px 15px 30px 15px;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  left: 15px;
+  margin-top:10px;
+  background: $purple;
+}
+
+.section-title h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+@media(max-width: 767.98px) {
+  .section-title h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+  }
+}
+
+@media(max-width: 567.98px) {
+  .section-title h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+  }
+}
+
+.page-title {
+  width: 100%;
+  text-align: center;
+  padding: 45px 15px 30px 15px;
+}
+
+.page-title::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  left: calc(50% - 25px);
+  margin-top:10px;
+  background: $purple;
+}
+
+.page-title h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+@media(max-width: 767.98px) {
+  .page-title h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+  }
+}
+
+@media(max-width: 567.98px) {
+  .page-title h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+  }
+}
