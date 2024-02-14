@@ -191,6 +191,7 @@
   .menu-link.active {
     opacity: 1;
     font-weight: 600;
+    padding-bottom: 30px;
     border-bottom: 2px solid $black;
 
     &::before {
