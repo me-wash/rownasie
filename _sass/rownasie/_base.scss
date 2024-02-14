@@ -275,6 +275,22 @@ blockquote {
 }
 
 // Wrapper
+
+.paragraph {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}   
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+ }
+ 
 .wrapper {
   max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
   max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
