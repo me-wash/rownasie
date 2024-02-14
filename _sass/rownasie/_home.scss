@@ -98,7 +98,7 @@
   background: transparent;
   border-radius: 5px;
   border: 2px solid $text-base-color;
-  font-family: $font-family;
+  font-family: $sans-family;
   color: $text-base-color;
   font-weight: $bold-weight;
   opacity: 0.7;
@@ -174,7 +174,7 @@
   align-items: center;
   opacity: 0.7;
   text-transform: capitalize;
-  font-family: $font-family;
+  font-family: $sans-family;
   font-size: $large-font-size;
 
   &:hover {
@@ -205,7 +205,7 @@
   cursor: pointer;
   background: transparent;
   border: 0;
-  font-family: $font-family;
+  font-family: $sans-family;
 }
 
 .category-content.description {
