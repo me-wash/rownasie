@@ -324,7 +324,9 @@
   margin: 40px;
   width: fit-content;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
 .parallax-content span {
   display: block;
   font-size: 3.5vw;
@@ -338,8 +340,8 @@
 }
 
 .parallax-content span:last-child {
-  font-family: $sans-family;
-  font-weight: 900
+  font-family: 'Montserrat ExtraBold', sans-serif
+
 }
 
 .text-effect {
