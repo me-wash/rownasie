@@ -333,12 +333,12 @@ span {
   text-transform: uppercase;
 }
 
-span:not(:last-child) {
+span.slogan-item {
   font-family: 'Montserrat', sans-serif; /* Use Montserrat Light for non-last spans */
   font-weight: 300;
 }
 
-span:last-child {
+span.slogan-item:last-child {
   font-family: 'Montserrat', sans-serif; /* Use Montserrat ExtraBold for the last span */
   font-weight: 800;
 }
