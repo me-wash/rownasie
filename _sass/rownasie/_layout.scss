@@ -337,7 +337,10 @@
 
 }
 
-
+.parallax-content span:not(:last-child) {
+  font-family: $sans-family;
+  font-weight: 300
+}
 
 .text-effect {
   position: relative;
