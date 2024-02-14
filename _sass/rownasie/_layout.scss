@@ -325,28 +325,24 @@
   width: fit-content;
 }
 
-span {
+.parallax-content span {
   display: block;
   font-size: 5vw;
   text-transform: uppercase;
 
   @include media-query($on-mobile) {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 }
 
-span.slogan-item {
+.parallax-content span.slogan-item {
   font-family: $sans-family;
   font-weight: $light-weight;
 }
 
-span.slogan-item.bold {
+.parallax-content span.slogan-item.bold {
   font-weight: $black-weight
 }
-
-
-
-
 
 // Content
 .posts-item-note {
