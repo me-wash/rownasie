@@ -332,11 +332,13 @@
 }
 
 .parallax-content span:not(:last-child) {
-  font-family: "Montserrat Light", sans-serif;
+  font-family: $sans-family;
+  font-weight: $light-weight;
 }
 
 span:last-child {
-  font-family: "Montserrat ExtraBold", sans-serif;
+  font-family: $sans-family;
+  font-weight: $black-weight
 }
 
 .text-effect {
