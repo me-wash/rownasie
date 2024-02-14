@@ -16,23 +16,6 @@ lang: pl
     {{ site.data.home.pl.about.about}} {% else %}
     {{ site.data.home.en.about.about}} {% endif %}
   </div>
-  <div class="container tiles">
-    {%- assign hashtags_pl = site.data.home.pl.about.hashtags -%}
-    {%- assign hashtags_en = site.data.home.en.about.hashtags -%}
-    {% if lang == "pl" %}
-    {%- if hashtags_pl -%}
-    {%- for hashtag in hashtags_pl -%}
-    <div class="tile">{{hashtag}}</div>
-    {%- endfor -%}
-    {%- endif -%}
-    {% else %}
-    {%- if hashtags_en -%}
-    {%- for hashtag in hashtags_en -%}
-    <div class="tile">{{hashtag}}</div>
-    {%- endfor -%}
-    {%- endif -%}
-    {%- endif -%}
-  </div>
 </div>
 <div class="paragraph">
   <div class="container">
