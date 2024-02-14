@@ -325,33 +325,24 @@
   width: fit-content;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Black:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
 
 .parallax-content span {
   display: block;
   font-size: 3.5vw;
   text-transform: uppercase;
-  font-family: $sans-family;
-  font-weight: 300;
+}
 
+.parallax-content span:not(:last-child) {
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat Light for non-last spans */
+  font-weight: 300;
 }
 
 .parallax-content span:last-child {
-  font-family: $sans-family;
-  font-weight: 800
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat ExtraBold for the last span */
+  font-weight: 800;
 }
 
-.text-effect {
-  position: relative;
-  padding: 10px;
-  padding-right: 3vw;
-  overflow: hidden;
-  left: 23vw;
-  top: -25vw;
-  margin-bottom: -12vw
-  
-}
 
 .text-effect p {
   margin: 0;
