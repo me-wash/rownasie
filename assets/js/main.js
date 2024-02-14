@@ -49,6 +49,11 @@ window.addEventListener('scroll', function() {
       this.checked
         ? area.classList.add("blurry")
         : area.classList.remove("blurry");
+
+        const area2 = document.querySelector(".parallax");
+        this.checked
+          ? area2.classList.add("blurry")
+          : area2.classList.remove("blurry");
     });
   })();
   

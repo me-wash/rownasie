@@ -292,6 +292,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &.blurry {
+    animation: 0.2s ease-in forwards blur;
+    -webkit-animation: 0.2s ease-in forwards blur;
+  }
+
 }
 
 .parallax::before {
