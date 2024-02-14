@@ -333,13 +333,13 @@
   font-size: 3.5vw;
   text-transform: uppercase;
   font-family: $sans-family;
-  font-weight: 800;
+  font-weight: 300;
 
 }
 
-.parallax-content span:not(last-child) {
+.parallax-content span:last-child {
   font-family: $sans-family;
-  font-weight: 300
+  font-weight: 800
 }
 
 .text-effect {
