@@ -20,12 +20,13 @@ lang: pl
 <div class="paragraph">
   <div class="container">
     <div class="tabs-navigation">
-      <button class="tab-btn active" data-group="board">{% if lang == "pl" %}
+      <button class="tab-btn active" data-group="board">
+      {% if lang == "pl" %}
         Zarząd {% else %} 
-        Management Board {% endif %}</h1></button>
+        Management Board {% endif %}</button>
       <button class="tab-btn" data-group="committee">{% if lang == "pl" %}
         Komisja Rewizyjna {% else %} 
-        Audit Committee {% endif %}</h1></button>
+        Audit Committee {% endif %}</button>
     </div>
     <div class="row">
       {%- assign team = site.data.team -%}
