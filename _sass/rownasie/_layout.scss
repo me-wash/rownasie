@@ -209,26 +209,23 @@
     background-color: $white;
  
     a#mode {
-      left: 10px;   
+      left: 20px;   
     }
 
     a#mode, .dropdown, .menu-icon {
       top: 12px;
       font-size: $large-font-size;
+      opacity: 1
     }
 
     .menu-icon {
       display: block;
       position: absolute;
-      right: 0;
+      right: 20px;
       padding-bottom: 15px;
       cursor: pointer;
       text-align: center;
       z-index: 1;
-
-      &:hover {
-          opacity: 1;  
-      }
 
       &:active {
         -webkit-transform: scale(0.9, 0.9);
