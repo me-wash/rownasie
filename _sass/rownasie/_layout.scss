@@ -176,7 +176,7 @@
     &:hover {
       opacity: 0.8;
       padding-bottom: 21px;
-      border-bottom: 3px solid $black;
+      border-bottom: 2px solid $purple;
     }
 
     &:not(:last-child) {
@@ -194,11 +194,8 @@
     opacity: 1;
     font-weight: 600;
     padding-bottom: 21px;
-    border-bottom: 3px solid $black;
+    border-bottom: 3px solid $purple;
 
-    &::before {
-      content: "> "
-    }
   }
 
   @include media-query($on-mobile) {
