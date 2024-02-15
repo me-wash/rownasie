@@ -49,7 +49,7 @@
     -ms-user-select: none;
     -webkit-user-select: none;
     color: $black;
-    display: inline;
+    display: flex;
 
     .navbar-logo {
         content: url('/assets/img/logo_czarnobiałe_pl.png');
@@ -68,6 +68,7 @@
         transform: scale(1, 1);
         opacity: 0.7;
         z-index: 1;
+        display: inline;
 
         &:hover {
             color: inherit;
@@ -104,6 +105,7 @@
         transform: scale(1, 1);
         opacity: 0.7;
         z-index: 1;
+        display: inline;
 
 
         &::before {
@@ -172,6 +174,7 @@
         opacity: 0.7;
         letter-spacing: 0.3px;
         text-transform: uppercase;
+        display: inline;
 
         &::before {
             content: ".";
