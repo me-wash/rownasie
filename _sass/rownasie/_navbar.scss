@@ -16,13 +16,6 @@
     @extend %clearfix;
 }
 
-.navbar-logo {
-    content: url('/assets/img/logo_czarnobiałe_pl.png');
-    float: left;
-    max-width: 200px;
-    height: auto
-}
-
 .navbar-wrapper.scrolled {
     background-color: $white;
 
@@ -59,7 +52,7 @@
 
     .navbar-logo {
         content: url('/assets/img/logo_czarnobiałe_pl.png');
-        float: left;
+    
         max-width: 200px;
         height: auto
     }
