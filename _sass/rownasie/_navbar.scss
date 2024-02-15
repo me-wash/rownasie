@@ -56,6 +56,13 @@
     -ms-user-select: none;
     -webkit-user-select: none;
     color: $black;
+
+    .navbar-logo {
+        content: url('/assets/img/logo_czarnobiałe_pl.png');
+        float: left;
+        max-width: 200px;
+        height: auto
+    }
     
 
     a#mode {
