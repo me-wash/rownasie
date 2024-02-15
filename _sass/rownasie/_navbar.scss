@@ -212,6 +212,10 @@
         height: 50px;
         background-color: $white;
 
+        .navbar-logo {
+            display: none;
+        }
+
         a#mode {
             left: 20px;
         }
