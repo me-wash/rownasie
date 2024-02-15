@@ -11,8 +11,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
-    border-bottom: 1px solid $black;
+    max-width: calc(#{$wide-size} - #{$spacing-full});
     padding: $spacing-full - 15px $spacing-full;
     @extend %clearfix;
 }
@@ -50,6 +49,7 @@
     -ms-user-select: none;
     -webkit-user-select: none;
     color: $black;
+    text-transform: uppercase;
 
     a#mode {
         float: left;
@@ -165,8 +165,9 @@
         opacity: 0.7;
         letter-spacing: 0.3px;
 
-        &::after {
-            content: "."
+        &::before {
+            content: ".";
+            font-family: $mono-family;
         }
 
         &:hover {
@@ -189,8 +190,10 @@
     .menu-link.active {
         opacity: 1;
         font-weight: 600;
-        padding-bottom: 20px;
-        border-bottom: 5px solid $black;
+        font-family: $mono-family;
+        &::before {
+            content: "_"
+        }
 
     }
 
