@@ -50,6 +50,8 @@
     -webkit-user-select: none;
     color: $black;
     display: flex;
+    align-content: center;
+    justify-content: space-between;
 
     .navbar-logo {
         content: url('/assets/img/logo_czarnobiałe_pl.png');
