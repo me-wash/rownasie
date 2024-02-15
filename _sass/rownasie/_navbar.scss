@@ -113,8 +113,8 @@
     }
 
 
-    .dropdown i {
-        font-size: $base-font-size;
+    .dropdown, a#mode {
+        font-size: $large-font-size
     }
 
     .lang-dropdown {
@@ -167,8 +167,7 @@
 
         &::before {
             content: ".";
-            font-family: $mono-family;
-        }
+              }
 
         &:hover {
             opacity: 0.8;
@@ -190,7 +189,7 @@
     .menu-link.active {
         opacity: 1;
         font-weight: 600;
-        font-family: $mono-family;
+
         &::before {
             content: "_"
         }
