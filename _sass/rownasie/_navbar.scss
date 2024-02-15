@@ -52,14 +52,13 @@
 
     .navbar-logo {
         content: url('/assets/img/logo_czarnobiałe_pl.png');
-    
+        float: left;
         max-width: 200px;
         height: auto
     }
     
 
     a#mode {
-        float: left;
         left: 8px;
         top: 6px;
         position: relative;
@@ -95,7 +94,6 @@
     }
 
     .dropdown {
-        float: left;
         left: 8px;
         top: 6px;
         position: relative;
