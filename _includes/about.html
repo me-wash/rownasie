@@ -27,7 +27,7 @@
     <div class="row">
       {%- assign team = site.data.team -%}
       {%- for member in team -%}
-      <div class="column card active" data-group="{{ member.group }}">
+      <div class="column" data-group="{{ member.group }}">
         <div class="team">
           <div class="team-img">
             <img src="{{ member.img }}" alt="{{ member.name }} Image">
