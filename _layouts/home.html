@@ -25,12 +25,13 @@ home: true
 
   {% include navbar.html %}
   {% include home-banner.html %}
-<main>
-  <div class="container">
-    {{content}}
-  </div>
+
+   <div class="wrapper">
+    <main aria-label="Content">
+      {{ content }}
   {% include footer.html %}
 </main>
+   </div>
 
 </body>
 
