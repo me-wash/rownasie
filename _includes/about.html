@@ -10,47 +10,29 @@
   {{ site.data.home.en.about.about}} {% endif %}
 </div>
 
-
-<div class="paragraph">
-  <div class="container">
-    <div class="tabs-navigation">
-      <button class="tab-btn active" data-group="board">{% if lang == "pl" %}
-        Zarząd {% else %}
-        Management Board {% endif %}</button>
-      <button class="tab-btn" data-group="committee">{% if lang == "pl" %}
-        Komisja Rewizyjna {% else %}
-        Audit Committee {% endif %}</button>
+<div class="container second">
+  <div class="item">
+    <div class="img img-first"></div>
+    <div class="card">
+      <h3>Rock climbing</h3>
+      <p>The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling</p>
+      <a href="#">Learn more</a>
     </div>
-
-
-
-    <div class="row">
-      {%- assign team = site.data.team -%}
-      {%- for member in team -%}
-      <div class="column" data-group="{{ member.group }}">
-        <div class="team">
-          <div class="team-img">
-            <img src="{{ member.img }}" alt="{{ member.name }} Image">
-          </div>
-          <div class="team-content">
-            {% if lang == "pl" %}
-            <h2>{{ member.name }}</h2>
-            <h3>{{ member.pl.title }}</h3>
-            {% else %}
-            <h2>{{ member.name }}</h2>
-            <h3>{{ member.en.title }}</h3>
-            {%- endif -%}
-          </div>
-          <div class="team-overlay">
-            {% if lang == "pl" %}
-            <p>{{ member.pl.bio }}</p>
-            {% else %}
-            p>{{ member.en.bio }}</p>
-            {%- endif -%}
-          </div>
-        </div>
-      </div>
-      {%- endfor -%}
+  </div>
+  <div class="item">
+    <div class="img img-second"></div>
+    <div class="card">
+      <h3>Caving</h3>
+      <p>Exploring underground through networks of tunnels and passageways, which can be natural or artificial.</p>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="img img-third"></div>
+    <div class="card">
+      <h3>Parachuting</h3>
+      <p>Jumping from an aeroplane and falling through the air before opening your parachute.</p>
+      <a href="#">Learn more</a>
     </div>
   </div>
 </div>
